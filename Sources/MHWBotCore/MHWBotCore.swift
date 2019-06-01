@@ -1,3 +1,3 @@
-struct MHWBotCore {
-    var text = "Hello, World!"
+public struct MHWBotCore {
+    public var text = "Hello, World!"
 }
