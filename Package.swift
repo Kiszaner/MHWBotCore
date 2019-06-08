@@ -21,6 +21,10 @@ let package = Package(
         .target(
             name: "MHWBotCore",
             dependencies: []),
+        .target(
+            name: "ShowcaseBot",
+            dependencies: ["MHWBotCore"],
+            path: "ShowcaseBot"),
         .testTarget(
             name: "MHWBotCoreTests",
             dependencies: ["MHWBotCore"]),
