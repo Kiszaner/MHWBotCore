@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum RecoveryAction: String, Codable, CodingKey {
+public enum RecoveryAction: String, Codable, CodingKey {
     case crouch, dodge
 }
 
-struct Recovery: Codable {
-    let actions: [RecoveryAction]
-    let items: [Item]
+public struct Recovery: Codable {
+    public let actions: [RecoveryAction]
+    public let items: [Item]
 }

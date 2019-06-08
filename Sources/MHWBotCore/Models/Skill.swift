@@ -7,39 +7,39 @@
 
 import Foundation
 
-struct Skill: Codable {
-    let id: Int
-    let slug: String?
-    let name: String
-    let description: String
-    let ranks: [Rank]?
+public struct Skill: Codable {
+    public let id: Int
+    public let slug: String?
+    public let name: String
+    public let description: String
+    public let ranks: [Rank]?
 
-    struct Rank: Codable {
-        let id: Int
-        let slug: String
-        let level: Int
-        let description: String
-        let skill: Int
-        let skillName: String
-        let modifiers: Modifiers
+    public struct Rank: Codable {
+        public let id: Int
+        public let slug: String
+        public let level: Int
+        public let description: String
+        public let skill: Int
+        public let skillName: String
+        public let modifiers: Modifiers
     }
     
-    struct Modifiers: Codable {
-        let affinity: Int
-        let attack: Int
-        let damageFire: Int
-        let damageWater: Int
-        let damageice: Int
-        let damageThunder: Int
-        let damageDragon: Int
-        let defense: Int
-        let health: Int
-        let sharpnessBonus: Int
-        let resistAll: Int
-        let resistFire: Int
-        let resistWater: Int
-        let resistIce: Int
-        let resistThunder: Int
-        let resistDragon: Int
+    public struct Modifiers: Codable {
+        public let affinity: Int
+        public let attack: Int
+        public let damageFire: Int
+        public let damageWater: Int
+        public let damageice: Int
+        public let damageThunder: Int
+        public let damageDragon: Int
+        public let defense: Int
+        public let health: Int
+        public let sharpnessBonus: Int
+        public let resistAll: Int
+        public let resistFire: Int
+        public let resistWater: Int
+        public let resistIce: Int
+        public let resistThunder: Int
+        public let resistDragon: Int
     }
 }

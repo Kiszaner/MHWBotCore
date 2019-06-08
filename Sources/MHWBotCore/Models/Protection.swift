@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Protection: Codable {
-    let items: [Item]
-    let skills: [Skill]
+public struct Protection: Codable {
+    public let items: [Item]
+    public let skills: [Skill]
 }

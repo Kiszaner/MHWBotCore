@@ -7,34 +7,34 @@
 
 import Foundation
 
-struct Monster: Codable {
-    let id: Int
-    let name: String
-    let type: MonsterType
-    let species: MonsterSpecies
-    let description: String
-    let elements: [ElementType]
-    let ailments: [Ailment]
-    let locations: [Location]
-    let resistances: [MonsterResistance]
-    let weaknesses: [MonsterWeakness]
+public struct Monster: Codable {
+    public let id: Int
+    public let name: String
+    public let type: MonsterType
+    public let species: MonsterSpecies
+    public let description: String
+    public let elements: [ElementType]
+    public let ailments: [Ailment]
+    public let locations: [Location]
+    public let resistances: [MonsterResistance]
+    public let weaknesses: [MonsterWeakness]
     
-    enum MonsterType: String, Codable, CodingKey {
+    public enum MonsterType: String, Codable, CodingKey {
         case small, large
     }
     
-    enum MonsterSpecies: String, Codable, CodingKey {
+    public enum MonsterSpecies: String, Codable, CodingKey {
         case bird = "bird wyvern", brute = "brute wyvern", fanged = "fanged wyvern", fish, flying = "flying wyvern", piscine = "piscine wyvern"
         case herbivore, lynian, neopteron
         case wingdrake, elder = "elder dragon"
     }
     
-    struct MonsterResistance: Codable {
+    public struct MonsterResistance: Codable {
         let element: ElementType
         let condition: String?
     }
     
-    struct MonsterWeakness: Codable {
+    public struct MonsterWeakness: Codable {
         let element: ElementType
         let stars: Int
         let condition: String?

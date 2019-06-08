@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum ElementType: String, Codable, CodingKey {
+public enum ElementType: String, Codable, CodingKey {
     case fire, water, ice, thunder, dragon, blast, poison, sleep, paralysis
 }

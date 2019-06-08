@@ -7,11 +7,10 @@
 
 import Foundation
 
-struct Ailment: Codable {
-    
-    let id: Int
-    let name: String
-    let description: String
-    let recovery: Recovery
-    let protection: Protection
+public struct Ailment: Codable {
+    public let id: Int
+    public let name: String
+    public let description: String
+    public let recovery: Recovery
+    public let protection: Protection
 }

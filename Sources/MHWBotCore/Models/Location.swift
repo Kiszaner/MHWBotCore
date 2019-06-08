@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct Location: Codable {
-    let id: Int
-    let name: String
-    let zoneCount: Int
-    let camps: [Camp]?
+public struct Location: Codable {
+    public let id: Int
+    public let name: String
+    public let zoneCount: Int
+    public let camps: [Camp]?
     
-    struct Camp: Codable {
-        let id: Int
-        let name: String
-        let zone: Int
+    public struct Camp: Codable {
+        public let id: Int
+        public let name: String
+        public let zone: Int
     }
 }

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-@testable import MHWBotCore
+import MHWBotCore
 
 let dispatchGroup = DispatchGroup()
 let apiService = MonstersService.make()

@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Item: Codable {
-    let id: Int
-    let name: String
-    let description: String
-    let rarity: Int
-    let carryLimit: Int
-    let value: Int?
+public struct Item: Codable {
+    public let id: Int
+    public let name: String
+    public let description: String
+    public let rarity: Int
+    public let carryLimit: Int
+    public let value: Int?
 }

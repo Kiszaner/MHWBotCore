@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum APIError: Error {
+public enum APIError: Error {
     case malformedUrl, parseError(Error?), error
 }
 
-class APIService {
+public class APIService {
     
     let endpoint: String
     let apiRequestManager: APIRequestManager

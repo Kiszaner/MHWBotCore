@@ -7,9 +7,9 @@
 
 import Foundation
 
-typealias MonstersResult = (Result<[Monster], APIError>) -> Void
+public typealias MonstersResult = (Result<[Monster], APIError>) -> Void
 
-final class MonstersService: APIService {
+public final class MonstersService: APIService {
     let monsters = Endpoint.monsters
 
     public func getMonsters(completionHandler: @escaping MonstersResult) {
