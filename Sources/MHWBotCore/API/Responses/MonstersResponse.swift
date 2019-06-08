@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct MonstersResponse: Equatable, Codable {
+struct MonstersResponse: Codable {
     let monsters: [Monster]
 }
